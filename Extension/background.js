@@ -52,7 +52,7 @@ function onDebuggerEnabled(debuggeeId) {
     {
       patterns: [{
         requestStage: "Response",
-        resourceType: "Document", urlPattern: '*lichess*'
+        resourceType: "Document"/* , urlPattern: '*targetWebsite*' */
       }]
     },
     function (e) {
@@ -115,7 +115,7 @@ function onDetach(debuggeeId) {
       {
         patterns: [{
           requestStage: "Response",
-          resourceType: "Document", urlPattern: '*lichess*'
+          resourceType: "Document"  // , urlPattern: '*targetWebsite*' 
         }]
       },
       function (e) {
