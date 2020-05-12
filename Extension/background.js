@@ -110,7 +110,7 @@ function onDetach(debuggeeId) {
   if (typeof data && debuggerEnabled === true) {
     console.log(chrome.i18n.getMessage('inHandler'), data);
     chrome.debugger.sendCommand(
-      debugID,
+      debugIdGlobal,
       "Fetch.enable",
       {
         patterns: [{
