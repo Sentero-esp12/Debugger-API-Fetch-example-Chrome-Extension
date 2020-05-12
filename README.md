@@ -1,2 +1,7 @@
 # Debugger API Fetch example Chrome Extension
- Allows to intercept the response body of a request and modify it on the fly inside a Chrome Extension
+
+- Attaches Debugger to the tab when the extension's icon is clicked
+- Intercepts the document's response body
+- Checks if it contains a meta tag '<meta http-equiv="Content-Security-Policy'
+- Returns a modified request
+
