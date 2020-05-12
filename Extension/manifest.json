@@ -1,0 +1,24 @@
+{
+  "name": "Fetch Debugger API",
+  "description": "removes CSP header from the document response body and returns a modified document on the fly",
+
+  "version": "0.1",
+  "permissions": [
+      "debugger",
+      "\u003Call_urls>",
+      "webNavigation"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "debuggerStart.png",
+    "default_title": "Start debugger"
+  },
+  "manifest_version": 2,
+  "externally_connectable": {
+    "matches": []
+}
+
+}
